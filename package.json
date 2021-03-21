@@ -1,27 +1,44 @@
 {
-  "name": "tsboiler",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/EkkoKo/tsBoiler.git",
-  "author": "ekkoko <ekkoko@users.noreply.github.com>",
-  "license": "MIT",
-  "scripts": {
-    "start": "node bin/start",
-    "build": "tsc",
-    "dev": "nodemon -r dotenv/config -r tsconfig-paths/register src/index.ts"
-  },
-  "devDependencies": {
-    "@types/node": "^14.14.31",
-    "cross-env": "^7.0.3",
-    "nodemon": "^2.0.7",
-    "ts-node": "^9.1.1",
-    "typescript": "^4.2.2"
-  },
+  "name": "grpc-web-stream",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
     "@improbable-eng/grpc-web": "^0.14.0",
-    "@improbable-eng/grpc-web-node-http-transport": "^0.14.0",
-    "dotenv": "^8.2.0",
-    "google-protobuf": "^3.15.6",
-    "tsconfig-paths": "^3.9.0"
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.3",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
